@@ -31,36 +31,38 @@
       font-weight: 600;
     }
     .container {
-      max-width: 900px;
+      max-width: 800px;
       margin: 2rem auto;
       background-color: rgba(255,255,255,0.95);
       padding: 2rem;
       border-radius: 10px;
     }
-    h2 {
-      color: #002366;
-    }
     form {
-      display: grid;
-      gap: 1rem;
+      display: flex;
+      flex-direction: column;
     }
     label {
-      font-weight: bold;
+      margin-top: 1rem;
     }
     input, textarea {
       padding: 0.5rem;
-      font-family: inherit;
       border: 1px solid #ccc;
       border-radius: 5px;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
     }
     button {
+      margin-top: 1.5rem;
+      padding: 0.75rem;
       background-color: #002366;
       color: #FFD700;
       border: none;
-      padding: 0.75rem;
-      font-size: 1rem;
       border-radius: 5px;
+      font-weight: bold;
       cursor: pointer;
+    }
+    button:hover {
+      background-color: #001744;
     }
   </style>
 </head>
@@ -74,12 +76,11 @@
   </nav>
   <div class="container">
     <p>We’d love to hear from you! Whether you have a question, need help with tax compliance, or want to streamline your business—reach out and let’s get started.</p>
+    <p><strong>Email:</strong> djberenio@djbcpaacc.com</p>
+    <p><strong>Mobile:</strong> 0927 523 5627</p>
+    <p><strong>Address:</strong> A. Luna St., Fraber Village Endpoint, Manibaug Libutad, Porac, Pampanga 2008</p>
 
-    <p><strong>📧 Email:</strong> djberenio@djbcpaacc.com</p>
-    <p><strong>📞 Mobile:</strong> 0927 523 5627</p>
-    <p><strong>📍 Address:</strong> A. Luna St., Fraber Village Endpoint, Manibaug Libutad, Porac, Pampanga 2008</p>
-
-    <form>
+    <form action="https://formspree.io/f/xleqvdna" method="POST">
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required>
 
@@ -91,7 +92,7 @@
 
       <button type="submit">Submit</button>
     </form>
-    </div>
+
     <div style="text-align:center;margin-top:2rem;">
       <img src="Logo.jpg" alt="DJB CPA Logo" style="max-width:200px;">
     </div>
